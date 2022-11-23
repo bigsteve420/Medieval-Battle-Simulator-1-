@@ -1,0 +1,27 @@
+Universal Attributes:
+	(itemID),(name),(displayName),(rarity),(type),END
+
+Weapon Attributes (after (type)):
+	(weaponType),(canTargetAir),(canTargetGround),(accuracy),(power),(nickname),END
+
+Magic Attributes (after (type)):
+	(effects),(duration),(tempEffects),END
+
+
+Example Weapon:
+	#2,broad_sword,Broad Sword,common,weapon,sword,False,True,80,20,Broad Sword,END
+
+Example Magic:
+	#1,health_shard,Health Shard,common,magic,0/0/0/50/0/20/0/ground/0/,0/0/0/0/0/0/,0/0/0/0/0/0/0/ground/0/,END
+
+
+
+List Representation:
+	-	Each item separated by a /
+	-	End list with a /
+	e.g	(0/0/0/50/0/20/0/ground/0/)
+
+
+SYNTAX:
+	Effects & TempEffects:
+		(strength)/(speed)/(magic)/(hitpoints)/(hitpointsMax)/(energy)/(energyMax)/(airStatus)/(damageReduction)/
